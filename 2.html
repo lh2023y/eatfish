@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body id="body" aos-easing="ease" aos-duration="1500" aos-delay="0">
+    <header id="head" class="navbar navbar-default header " role="navigation"
+        style="background: rgba(131, 195, 255, 0); box-shadow: unset; height: 130px; border: none;">
+        <!-- 页面小屏的时候（这里设置的是(min-width: 768px)）出现的汉堡按钮 -->
+        <div class="left_logo">
+            <a href="/">
+                <img src="/Public/images/logo.png" alt="广州隆德重机有限公司">
+            </a>
+        </div>
+        <!-- 页面大屏的时候出现导航栏 -->
+        <div class="right_nav">
+            <div class="right_nav_top">
+                <div class="search" id="search">
+                    <form method="get" action="/Search/search.html">
+                        <i class="fa fa-search" aria-hidden="true" id="sousuo" style="cursor: pointer;"></i>
+                        <!-- 导航下拉框 -->
+
+                        <div class="box1">
+                            <div class="b-top">
+                                <div class="close">
+                                    <img class="search-img" src="/Public/images/cha.png"
+                                        style="width:32px;height: 32px;">
+                                </div>
+                            </div>
+                            <div class="b-mid">
+                                <span style="font-weight:normal;font-size:35px;color:#FF9800;">综合搜索 / </span> <span
+                                    style="font-size:30px;color:RGB(182,182,182) ;"> 搜索型号</span>
+                            </div>
+                            <div class="b-footer">
+                                <div class="b-footer-o">
+
+
+                                    <div class="first"><input type="text" name="search" style="color:#000" value=""
+                                            required="" class="one" placeholder="请输入关键字"></div>
+
+
+                                    <div class="second">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        <input type="submit" name="" value="" class="two">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <script charset="utf-8"
+                            src="https://goutong.baidu.com/site/671/8ac8019153d91295a14334c2c00631ef/b.js?siteId=18423618"></script>
+                        <script charset="utf-8"
+                            src="https://goutong.baidu.com/site/671/8ac8019153d91295a14334c2c00631ef/b.js?siteId=18423618"></script>
+                        <script charset="utf-8"
+                            src="https://goutong.baidu.com/site/671/8ac8019153d91295a14334c2c00631ef/b.js?siteId=18423618"></script>
+                        <script src="https://hm.baidu.com/hm.js?8ac8019153d91295a14334c2c00631ef"></script>
+                        <script src="https://hm.baidu.com/hm.js?8ac8019153d91295a14334c2c00631ef"></script>
+                        <script src="https://hm.baidu.com/hm.js?8ac8019153d91295a14334c2c00631ef"></script>
+                        <script>
+                            const btn = document.getElementById('sousuo')
+                            const box1 = document.querySelector('.box1')
+                            const close = document.querySelector('.close')
+
+                            let flag = true
+
+                            btn.addEventListener('click', function () {
+                                if (flag) {
+                                    box1.style.transform = 'translateY(0)'
+                                    flag = false
+                                }
+                            })
+
+                            close.addEventListener('click', function () {
+                                if (!flag) {
+                                    box1.style.transform = 'translateY(-350px)'
+                                    flag = true
+                                }
+                            })
+
+                        </script>
+                    </form>
+                </div>
+
+                <div class="language" id="language" style="cursor:pointer">
+                    <div>
+                        <span><a><img src="/Public/images/zh.jpg"><strong
+                                    style="color:#FFF">&nbsp;C&nbsp;N</strong></a><i class="fa fa-caret-down"
+                                aria-hidden="true"></i></span>
+                    </div>
+
+                    <div>
+                        <span><a><img src="/Public/images/en.jpg"><strong
+                                    style="color:#FFF">&nbsp;E&nbsp;N</strong></a></span>
+                    </div>
+
+
+                </div>
+                <!-- 这里是汉堡式菜单显示隐藏的折叠开关 -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="menu" style="margin-top: 35px;">
+                    <li class="li_a active">
+                        <a href="/" class="Tabs-item">
+                            <h1>网站首页</h1>
+                        </a>
+                        <div class="hr"></div>
+                    </li>
+
+                    <li class="li_a">
+                        <!-- 显示隐藏菜单列表 -->
+                        <a href="/Products/product.html" class="Tabs-item">
+                            <h1>产品中心<b class="caret"></b></h1>
+                        </a>
+                        <div class="hr"></div>
+                        <ul class="dropdownmenu">
+                            <div class="menu_left">
+                                <img src="/Public/images/head/product.png">
+                                <h2>产品中心</h2>
+                                <div class="menu_left_text">
+                                    <a href="/Products/product.html">
+                                        了解更多
+                                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu_middle">
+                                <ul class="ul_a">
+                                    <li class="li_b">
+                                        <span>链条产品</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right default">
+                                            <div class="menu_right_top">
+                                                <a href="/Products/product_nav/chain/Chain_products.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>链条产品</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a href="/Products/product_nav/chain/Drive_chain.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041d8294ef5d.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>传动链条</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/chain/small_conveyor_chain-longold.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041d8ccc3419.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>小型输送链条</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Products/product_nav/chain/Large_conveyor_chain.html">
+
+                                                            <img src="/Public/upload/2021-03-24/605af55e07de5.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>大型输送链条</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/chain/Special_conveyor_chain.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041c646bbe58.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>特种输送链条</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Products/product_nav/chain/Engineering_Chain.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041c72f345c7.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>工程链条</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Products/product_nav/chain/Lifting_Chain.html">
+
+                                                            <img src="/Public/upload/2021-03-24/605af605c8b4c.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>起重链条</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/chain/Stainless_Steel_Chain.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041c5fd62695.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>不锈钢链条</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Products/product_nav/chain/Roof_chain.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041c5d9deee6.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>顶板链</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li_b">
+                                        <span>链轮产品</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right default">
+                                            <div class="menu_right_top">
+                                                <a href="/Products/product_nav/sprocket/sprocket_products.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>链轮产品</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/sprocket/sprockets_isostandard.html">
+
+                                                            <img src="/Public/upload/2021-03-06/6042d7f1eedaf.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>欧标链轮</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/sprocket/American_Standard_sprocket.html">
+
+                                                            <img src="/Public/upload/2021-03-06/6042d805bf038.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>美标链轮</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/sprocket/Double_pitch_sprocket.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041fb7a02db0.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>双节距链轮</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/sprocket/Large_pitch_sprocket.html">
+
+                                                            <img src="/Public/upload/2021-03-06/6042d817422ce.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>大节距输送链轮</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/sprocket/Flat_top_conveyor_chain.html">
+
+                                                            <img src="/Public/upload/2021-03-06/6042d8303f959.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>平顶输送链轮</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/sprocket/Sprocket_Double_speed_chain.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041fb8e859b3.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>倍速链轮</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/sprocket/Cast_iron_sprocket.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041f79343cba.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>铸铁链轮</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li_b">
+                                        <span>传动产品</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right default">
+                                            <div class="menu_right_top">
+                                                <a href="/Products/product_nav/transmission/transmission_products.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>传动产品</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/transmission/synchronous_pulley.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041f54bdc479.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>同步带轮</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/transmission/rack_and_pinion.html">
+
+                                                            <img src="/Public/upload/2021-03-06/6042d9a0e22d5.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>齿轮齿条</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Products/product_nav/transmission/worm_gear.html">
+
+                                                            <img src="/Public/upload/2021-03-05/6041f5582501f.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>蜗轮蜗杆</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Products/product_nav/transmission/coupling.html">
+
+                                                            <img src="/Public/upload/2021-03-06/6042dbaf621b0.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>联轴器</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Products/product_nav/transmission/connector.html">
+
+                                                            <img src="/Public/upload/2021-03-06/6042d9cc1ae52.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>联结件</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li_b">
+                                        <span>其它产品</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right default">
+                                            <div class="menu_right_top">
+                                                <a href="/Products/product_nav/other/other_products.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>其它产品</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/other/Other_products_Ring_chain.html">
+
+                                                            <img src="/Public/upload/2021-03-01/603c8d0bea637.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>圆环链</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a
+                                                            href="/Products/product_nav/other/Other_products-conveyor_belt.html">
+
+                                                            <img src="/Public/upload/2021-03-01/603c9a2d16dc3.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>输送带</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Products/product_nav/other/Spreader.html">
+
+                                                            <img src="/Public/upload/2021-03-01/603c8d19643c2.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>吊具</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li class="li_a" id="application">
+                        <!-- <a href="javascript:;" class="Tabs-item"><h1>行业解决方案<b class="caret"></b></h1></a> -->
+                        <a href="/Applications/application.html" class="Tabs-item">
+                            <h1>行业解决方案<b class="caret"></b></h1>
+                        </a>
+                        <div class="hr"></div>
+                        <div class="dropdownmenu">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="all0">
+                                    <a href="/Applications/application_details/details/Automobile_production.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034ab5b6babd.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all1">
+                                    <a href="/Applications/application_details/id/3.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034ac0b88c5f.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all2">
+                                    <a href="/Applications/application_details/id/4.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034ac350cd1f.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all3">
+                                    <a href="/Applications/application_details/id/6.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034aca2b664d.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all4">
+                                    <a href="/Applications/application_details/id/7.html">
+
+                                        <img src="/Public/upload/2021-02-24/60360e043adce.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all5">
+                                    <a href="/Applications/application_details/id/8.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034ae9d22952.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all6">
+                                    <a href="/Applications/application_details/id/9.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034aeade9979.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all7">
+                                    <a href="/Applications/application_details/id/10.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034aebbb1e5c.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all8">
+                                    <a href="/Applications/application_details/id/11.html">
+
+                                        <img src="/Public/upload/2021-02-24/603608ff29fdc.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all9">
+                                    <a href="/Applications/application_details/id/12.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034aeeadf0f8.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all10">
+                                    <a href="/Applications/application_details/id/13.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034af019c291.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all11">
+                                    <a href="/Applications/application_details/id/14.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034af1117f93.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all12">
+                                    <a href="/Applications/application_details/id/15.html">
+
+                                        <img src="/Public/upload/2021-02-24/603617c1775d8.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all13">
+                                    <a href="/Applications/application_details/id/16.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034af342773c.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all14">
+                                    <a href="/Applications/application_details/id/17.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034af4745ca4.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all15">
+                                    <a href="/Applications/application_details/id/18.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034af5ca9487.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all16">
+                                    <a href="/Applications/application_details/id/19.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034af6c2e774.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all17">
+                                    <a href="/Applications/application_details/id/20.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034af86b484f.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all18">
+                                    <a href="/Applications/application_details/id/21.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034af975e1be.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all19">
+                                    <a href="/Applications/application_details/id/22.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034afaaac6a7.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all20">
+                                    <a href="/Applications/application_details/id/23.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034b04842629.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all21">
+                                    <a href="/Applications/application_details/id/24.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034b05989d9b.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all22">
+                                    <a href="/Applications/application_details/id/25.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034b067f0c47.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all23">
+                                    <a href="/Applications/application_details/id/26.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034b073a6bfc.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all24">
+                                    <a href="/Applications/application_details/id/32.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034b086cea46.jpg">
+                                    </a>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="all25">
+                                    <a href="/Applications/application_details/id/33.html">
+
+                                        <img src="/Public/upload/2021-02-23/6034b098e5682.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <h3>行业解决方案</h3>
+                                <p>隆德产品应用范围广泛，在工程机械、农业机械、食品加工、包装灌装等行业发挥着重要效能。</p>
+                                <a href="/Applications/application.html">了解更多</a>
+                            </div>
+                            <ul class="nav nav-pills" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#all0" role="tab" data-toggle="tab">汽车生产</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all1" role="tab" data-toggle="tab">机械工程</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all2" role="tab" data-toggle="tab">轮胎行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all3" role="tab" data-toggle="tab">起重设备与叉车</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all4" role="tab" data-toggle="tab">港口机械</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all5" role="tab" data-toggle="tab">食品行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all6" role="tab" data-toggle="tab">糖果行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all7" role="tab" data-toggle="tab">烘焙行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all8" role="tab" data-toggle="tab">制糖行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all9" role="tab" data-toggle="tab">社会设施</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all10" role="tab" data-toggle="tab">公共环卫</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all11" role="tab" data-toggle="tab">航空航天</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all12" role="tab" data-toggle="tab">建筑行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all13" role="tab" data-toggle="tab">包装行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all14" role="tab" data-toggle="tab">物流运输业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all15" role="tab" data-toggle="tab">造纸行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all16" role="tab" data-toggle="tab">印刷行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all17" role="tab" data-toggle="tab">医疗行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all18" role="tab" data-toggle="tab">石油石化</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all19" role="tab" data-toggle="tab">电子行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all20" role="tab" data-toggle="tab">散物料业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all21" role="tab" data-toggle="tab">矿产行业</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all22" role="tab" data-toggle="tab">钢铁冶金</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all23" role="tab" data-toggle="tab">农业机械</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all24" role="tab" data-toggle="tab">木林加工</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#all25" role="tab" data-toggle="tab">烟草行业</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li_a support_dropdownmenu">
+                        <a href="/Service/Service.html" class="Tabs-item">
+                            <h1>服务与支持<b class="caret"></b></h1>
+                        </a>
+                        <div class="hr"></div>
+                        <ul class="dropdownmenu">
+                            <div class="menu_left">
+                                <img src="/Public/images/head/support-1.jpg">
+                                <h2>服务与支持</h2>
+                                <div class="menu_left_text">
+                                    <a href="/Service/service.html">
+                                        了解更多
+                                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu_middle">
+                                <ul class="ul_a">
+                                    <li class="li_b">
+                                        <span>产品应用支持</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right default">
+                                            <div class="menu_right_top">
+                                                <a href="/service/ProductsAndServices/id/8.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>产品应用支持</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/45.html">
+                                                            <img src="/Public/upload/2021-08-07/610ead0e7d4a4.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>链条介绍</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/46.html">
+                                                            <img src="/Public/upload/2021-08-07/610eac055669f.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>链条标准</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/47.html">
+                                                            <img src="/Public/upload/2021-08-07/610eac10650b3.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>链条故障检测</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/48.html">
+                                                            <img src="/Public/upload/2021-08-07/610eac1c419f6.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>链条工程术语</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/49.html">
+                                                            <img src="/Public/upload/2021-08-07/610eac26d47e4.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>链条培训中心</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/50.html">
+                                                            <img src="/Public/upload/2021-08-07/610eac31012a1.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>常见问题</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/89.html">
+                                                            <img src="/Public/upload/2021-08-10/61122822c2c62.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>选型指南</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li_b">
+                                        <span>产品技术服务</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right">
+                                            <div class="menu_right_top">
+                                                <a href="/service/ProductsAndServices/id/9.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>产品技术服务</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/51.html">
+                                                            <img src="/Public/upload/2021-08-07/610e6542b216a.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>应用工程</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/66.html">
+                                                            <img src="/Public/upload/2021-08-07/610e654ee4794.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>预拉配对服务</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/67.html">
+                                                            <img src="/Public/upload/2021-08-07/610e655947b80.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>培训</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/68.html">
+                                                            <img src="/Public/upload/2021-08-07/610e6563b6f90.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>快速送达</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/69.html">
+                                                            <img src="/Public/upload/2021-08-07/610e656c71872.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>润滑工程</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/ProductsAndServices_details/id/70.html">
+                                                            <img src="/Public/upload/2021-08-07/610e6574750c1.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>维护</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li_b">
+                                        <span>服务案例</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right">
+                                            <div class="menu_right_top">
+                                                <a href="/Service/ServiceCase/id/10.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>服务案例</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a href="/Service/caseSecondLevel/id/112.html">
+                                                            <img src="/Public/upload/2021-07-24/60fb01502d59d.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>传动服务案例</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/caseSecondLevel/id/113.html">
+                                                            <img src="/Public/upload/2021-07-24/60fae84bf1aad.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>输送服务案例</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/caseSecondLevel/id/114.html">
+                                                            <img src="/Public/upload/2021-07-24/60fae86762653.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>提升服务案例</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/Service/caseSecondLevel/id/115.html">
+                                                            <img src="/Public/upload/2021-07-24/60fae8782b7b8.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>其他服务案例</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="li_a about_dropdownmenu">
+                        <a href="/About/about.html" class="Tabs-item">
+                            <h1>关于我们<b class="caret"></b></h1>
+                        </a>
+                        <div class="hr"></div>
+                        <div class="dropdownmenu">
+                            <div class="menu_left">
+                                <img src="/Public/images/head/about-us-1.jpg">
+                                <h2>关于我们</h2>
+                                <div class="menu_left_text">
+                                    <a href="/About/about.html">
+                                        了解更多
+                                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu_middle">
+                                <ul class="ul_a">
+                                    <li class="li_b">
+                                        <span>公司概况</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right default">
+                                            <div class="menu_right_top">
+                                                <a href="/about/About_survey.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>公司概况</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a href="/About/About_enterprise.html">
+                                                            <img src="/Public/upload/2021-06-07/60bdb0ef6cc65.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>企业简介</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/About/About_idea.html">
+                                                            <img src="/Public/upload/2021-06-07/60bdb13e78085.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>文化理念</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/About/About_responsibility.html">
+                                                            <img src="/Public/upload/2021-06-07/60bdb14fa3ab5.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>企业责任</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/About/About_vision.html">
+                                                            <img src="/Public/upload/2021-06-07/60bdb1600adb4.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>愿景·使命·价值观</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li_b">
+                                        <span>质量体系</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right default">
+                                            <div class="menu_right_top">
+                                                <a href="/about/About_QualityAssurance.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>质量体系</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a href="/About/About_test.html">
+                                                            <img src="/Public/upload/2021-08-09/6110dfb925d3d.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>检测设备</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/About/About_quality.html">
+                                                            <img src="/Public/upload/2021-08-09/6110dfcfbb359.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>品质控制</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li_b">
+                                        <span>技术开发与生产</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right default">
+                                            <div class="menu_right_top">
+                                                <a href="/about/About_DevelopmentAndProduction.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>技术开发与生产</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a href="/About/About_innovate.html">
+                                                            <img src="/Public/upload/2021-06-07/60bdbca7e6a62.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>创新研发</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/About/About_production.html">
+                                                            <img src="/Public/upload/2021-06-07/60bdbcbca542c.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>生产设备</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/About/About_technology.html">
+                                                            <img src="/Public/upload/2021-06-07/60bdbe354aacd.png">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>制造工艺</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="li_b">
+                                        <span>可持续发展</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="menu_right default">
+                                            <div class="menu_right_top">
+                                                <a href="/about/About_continued.html">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                    <span>可持续发展</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu_right_bottom">
+                                                <ul class="ul_b">
+                                                    <li class="li_c">
+                                                        <a href="/about/About_continued.html#box1">
+                                                            <img src="/Public/upload/2021-06-07/60bdc0b61b7d1.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>可持续发展</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/about/About_continued.html#box2">
+                                                            <img src="/Public/upload/2021-06-07/60bdc0c61d5eb.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>环境</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/about/About_continued.html#box3">
+                                                            <img src="/Public/upload/2021-06-07/60bdc0df3834c.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>社会</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="li_c">
+                                                        <a href="/about/About_continued.html#box4">
+                                                            <img src="/Public/upload/2021-06-07/60bdb96362993.jpg">
+                                                            <div class="menu_right_bottom_text">
+                                                                <span>管理</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li_a CONTACT">
+                        <a href="/News/news.html" class="Tabs-item">
+                            <h1>媒体新闻</h1>
+                        </a>
+                        <div class="hr"></div>
+                        <div class="dropdownmenu">
+                            <div class="menu_left-o">
+                                <img src="/Public/images/head/news.png">
+                            </div>
+                            <div class="txt">
+                                <h3>媒体新闻</h3>
+                                <p>实时发布富士电机最新动态及展会讯息</p>
+                                <p>让您轻松掌握第一手资讯。</p>
+                                <a href="/News/news.html">了解更多</a>
+                            </div>
+                            <div class="menu_right">
+                                <div class="top">
+                                    <a href="/News/news.html">媒体新闻<span>&gt;</span></a>
+                                </div>
+                                <div class="down">
+                                    <a href="/News/exhibition.html">展会<span>&gt;</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="li_a CONTACT">
+                        <a href="javascript:;" class="Tabs-item">
+                            <h1>联系我们<b class="caret"></b></h1>
+                        </a>
+                        <div class="hr"></div>
+
+                        <div class="dropdownmenu">
+
+                            <div class="menu_left-o">
+
+                                <img src="/Public/images/head/contact_us.jpg">
+                            </div>
+
+
+                            <div class="txt">
+                                <h3>联系我们</h3>
+                                <p>如有关于产品问题的咨询或是针对网站的意见</p>
+                                <p>欢迎与我们联系。</p>
+                                <p>联系电话：020-22197679 (工作日9:00-17:00)</p>
+                                <p>联系邮箱：gzld_chain@126.com</p>
+                            </div>
+                            <div class="menu_right">
+                                <div class="top">
+                                    <a href="/Contact/contact.html">联系方式<span>&gt;</span></a>
+                                </div>
+                                <div class="down">
+                                    <a href="/Contact/join.html">加入我们<span>&gt;</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 右边置顶按钮 -->
+    <div class="container-files">
+        <div class="theme" title="电话">
+            <a href="tel:020-22197679" class="tel"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span class="phone">020 - 22197679</span>
+        </div>
+        <div class="theme" title="QQ">
+            <!-- 添加好友 -->
+            <a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=2455114816"
+                target="class"><i class="fa fa-qq" aria-hidden="true"></i></a>
+            <!-- 聊天 -->
+            <!-- <a href="tencent://message/?uin=2549915593&Site=qq&Menu=yes"><img src="/Public/images/QQ.png"></a> -->
+        </div>
+        <div class="theme" title="微信">
+            <i class="fa fa-weixin" aria-hidden="true"></i>
+            <img src="/Public/images/weixi.png" class="weixi">
+        </div>
+        <div class="theme" title="返回顶部" onclick="pageScroll()">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+    <script src="/Public/js/jquery-3.5.1.min.js"></script>
+    <script src="/Public/js/bootstrap.min.js"></script>
+    <script src="/Public/js/wow.min.js"></script>
+    <script src="/Public/js/common.js"></script>
+    <!-- 滑动到当前模块时 的进出动画 -->
+    <script src="/Public/js/aos.js"></script>
+
+    <!-- 给第一个应用领域 显示 -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#application .dropdownmenu li").eq(0).addClass("active");
+            $("#application .dropdownmenu .tab-content div").eq(0).addClass("active");
+        });	
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?8ac8019153d91295a14334c2c00631ef";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        .mtitle {
+            color: #FFFFFF;
+        }
+
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/Public/css/index.css">
+
+    <!-- 轮播广告 -->
+    <div>
+        <div id="wowslider-container" class="ws_gestures" style="font-size: 6px;">
+            <div class="ws_images">
+                <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;"><img
+                        src="http://longold-chain.com//Public/upload/2021-07-30/610399dcd84b5.png" alt="" title=""
+                        style="width: 100%;"></div>
+                <div class="ws_list"
+                    style="position: absolute; top: 0px; height: 100%; transform: translate3d(0px, 0px, 0px); width: 1000%; left: 0%; transition: all 0ms ease 0s;">
+                    <div class="ws_swipe_left"
+                        style="position: absolute; top: 0px; height: 100%; overflow: hidden; width: 10%; left: -10%;">
+                        <img src="http://longold-chain.com//Public/upload/2021-07-30/61039a0d13421.jpg" alt="" title=""
+                            style="visibility: visible; width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+                    </div>
+                    <ul style="width: 100%;">
+                        <li style="width: 10%; font-size: 0px;"><a href="javascript:;" target="_blank">
+                                <img src="http://longold-chain.com//Public/upload/2021-07-30/610399dcd84b5.png" alt=""
+                                    title=""
+                                    style="visibility: visible; width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+                                <div class="describe wow bounceInUp animated" data-wow-duration="1.6s"
+                                    style="background-color: transparent; visibility: visible; animation-duration: 1.6s; animation-name: bounceInUp;">
+                                    <h1 class="mtitle">欢迎来到隆德</h1>
+                                    <p class="mtitle">We make everything you need！</p>
+                                </div>
+                            </a></li>
+                        <li style="width: 10%; font-size: 0px;"><a href="javascript:;" target="_blank">
+                                <img src="http://longold-chain.com//Public/upload/2021-07-30/610399e677773.jpg" alt=""
+                                    title=""
+                                    style="visibility: visible; width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+                                <div class="describe wow bounceInUp animated" data-wow-duration="1.6s"
+                                    style="background-color: transparent; visibility: visible; animation-duration: 1.6s; animation-name: bounceInUp;">
+                                    <h1 class="mtitle"> 传动全球产业的未来</h1>
+                                    <p class="mtitle">Drive the world!</p>
+                                </div>
+                            </a></li>
+                        <li style="width: 10%; font-size: 0px;"><a href="javascript:;" target="_blank">
+                                <img src="http://longold-chain.com//Public/upload/2021-07-30/610399ee474e2.jpg" alt=""
+                                    title=""
+                                    style="visibility: visible; width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+                                <div class="describe wow bounceInUp animated" data-wow-duration="1.6s"
+                                    style="background-color: transparent; visibility: visible; animation-duration: 1.6s; animation-name: bounceInUp;">
+                               
+                                    <h1 class="mtitle">科技·创新·专注 </h1>
+                                    <p class="mtitle">Innovation begins from us!
+                                    </p>
+                                </div>
+                            </a></li>
+                        <li style="width: 10%; font-size: 0px;"><a href="javascript:;" target="_blank">
+                                <img src="http://longold-chain.com//Public/upload/2021-07-30/610399f724bcf.jpg" alt=""
+                                    title=""
+                                    style="visibility: visible; width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+                                <div class="describe wow bounceInUp animated" data-wow-duration="1.6s"
+                                    style="background-color: transparent; visibility: visible; animation-duration: 1.6s; animation-name: bounceInUp;">
+                                    
+                                    <h1 class="mtitle">技术·质量·可靠性</h1>
+                                    <p class="mtitle">We bring you high quality!</p>
+                                </div>
+                            </a></li>
+                        <li style="width: 10%; font-size: 0px;"><a href="javascript:;" target="_blank">
+                                <img src="http://longold-chain.com//Public/upload/2021-07-30/61039a018e74d.jpg" alt=""
+                                    title=""
+                                    style="visibility: visible; width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+                                <div class="describe wow bounceInUp animated" data-wow-duration="1.6s"
+                                    style="background-color: transparent; visibility: visible; animation-duration: 1.6s; animation-name: bounceInUp;">
+
+                                    <h1 class="mtitle">We do more!</h1>
+                                    <p class="mtitle">以客户为中心 我们乐于提供协助 为您的需求量身定制个性化方案</p>
+                                </div>
+                            </a></li>
+                        <li style="width: 10%; font-size: 0px;"><a href="javascript:;" target="_blank">
+                                <img src="http://longold-chain.com//Public/upload/2021-07-30/61039a0d13421.jpg" alt=""
+                                    title=""
+                                    style="visibility: visible; width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+                                <div class="describe wow bounceInUp animated" data-wow-duration="1.6s"
+                                    style="background-color: transparent; visibility: visible; animation-duration: 1.6s; animation-name: bounceInUp;">
+
+                                    <h1 class="mtitle">共创美好未来</h1>
+                                    <p class="mtitle">Open Power and Future!</p>
+                                </div>
+                            </a></li>
+                    </ul>
+                    <div class="ws_swipe_right"
+                        style="position: absolute; top: 0px; height: 100%; overflow: hidden; width: 10%; left: 60%;">
+                        <img src="http://longold-chain.com//Public/upload/2021-07-30/610399dcd84b5.png" alt="" title=""
+                            style="visibility: visible; width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+                    </div>
+                </div>
+            </div>
+            <div class="ws_bullets">
+                <a href="javascript:;" target="_blank" class="ws_selbull">0</a><a href="javascript:;" target="_blank"
+                    class="">1</a><a href="javascript:;" target="_blank" class="">2</a><a href="javascript:;"
+                    target="_blank" class="">3</a><a href="javascript:;" target="_blank" class="">4</a><a
+                    href="javascript:;" target="_blank" class="">5</a>
+            </div>
+            <div
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 10; background: rgb(255, 255, 255); opacity: 0;">
+                <a href="javascript:;"
+                    style="display: block; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                    target="_blank"></a>
+            </div>
+            <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: visible; opacity: 1;"
+                class="ws_effect">
+                <div class="ws_parts"></div>
+                <div class="ws_zoom"></div>
+                <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden;">
+                </div>
+            </div>
+            <div class="ws_effect"
+                style="position: absolute; background-size: cover; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden; opacity: 1; perspective: 2000px;">
+                <div class="ws_effect"
+                    style="position: absolute; background-size: cover; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden; transform-style: preserve-3d; perspective: 2000px; z-index: 8; overflow: visible; opacity: 1;">
+                </div>
+            </div>
+            <div class="ws_effect"
+                style="overflow: visible; position: absolute; top: 0px; left: 0px; width: 1533.58px; height: 739.45px; transform: translate3d(0px, 0px, 0px); transform-origin: 766.79px 369.725px 0px; perspective: 2000px; opacity: 1;">
+            </div>
+            <div class="ws_video_btn">
+                <div></div>
+            </div><a href="#" class="ws_next"></a><a href="#" class="ws_prev"></a>
+            <div class="ws-title-wrapper">
+                <div class="ws-title" style=""></div>
+                <div class="ws-title" style="display:none"></div>
+            </div><a href="#" class="ws_fullscreen"></a>
+        </div>
+    </div>
+
+    <!-- 产品中心 -->
+    <div class="product" style="background-image: url(&quot;/Public/upload/2021-08-06/610c1819424cd.jpg&quot;);">
+        <div class="product_box">
+            <div class="index-bk1">
+                <div class="wrap">
+                    <div aos="fade-right" class="aos-init">
+                        <a href="/Products/product.html">
+                            <h1>产品中心</h1>
+                            <h2 class="h2">PRODUCTS WORLD</h2>
+                        </a>
+                        <p>欢迎来到LONGOLD产品世界，从这里开始寻找您需要的产品吧。</p>
+                    </div>
+                    <ul aos="fade-left" aos-delay="100" class="aos-init">
+                        <li>
+                            <a href="/Products/product_secondLevel/chain/Chain_products.html" class="more">
+                                链条产品
+                            </a>
+                        </li>
+                        <span><i>/</i><i>/</i><i>/</i></span>
+                        <li>
+                            <a href="/Products/product_secondLevel/sprocket/sprocket_products.html" class="more">
+                                链轮产品
+                            </a>
+                        </li>
+                        <span><i>/</i><i>/</i><i>/</i></span>
+                        <li>
+                            <a href="/Products/product_secondLevel/transmission/transmission_products.html"
+                                class="more">
+                                传动产品
+                            </a>
+                        </li>
+                        <span><i>/</i><i>/</i><i>/</i></span>
+                        <li>
+                            <a href="/Products/product_secondLevel/other/other_products.html" class="more">
+                                其他产品
+                            </a>
+                        </li>
+                        <p>我们制造您需要的一切！WE DO MORE!</p>
+                    </ul>
+                </div>
+            </div>
+            <ul>
+                <li class="product_class wow bounceInUp animated" data-wow-delay="0.3s" data-wow-duration="1.6s"
+                    style="visibility: visible; animation-duration: 1.6s; animation-delay: 0.3s; animation-name: bounceInUp;">
+                    <div class="product_title" data-wow-delay="0.5s" data-wow-duration="1.6s">
+                        <img src="/Public/images/chain.png">
+                        <br>链条产品
+                    </div>
+                    <div class="list">
+                        <a href="/Products/product_nav/chain/Drive_chain.html">
+                            传动链条</a> <a href="/Products/product_nav/chain/small_conveyor_chain-longold.html">
+                            小型输送链条</a> <a href="/Products/product_nav/chain/Large_conveyor_chain.html">
+                            大型输送链条</a> <a href="/Products/product_nav/chain/Special_conveyor_chain.html">
+                            特种输送链条</a> <a href="/Products/product_nav/chain/Engineering_Chain.html">
+                            工程链条</a> <a href="/Products/product_nav/chain/Lifting_Chain.html">
+                            起重链条</a> <a href="/Products/product_nav/chain/Stainless_Steel_Chain.html">
+                            不锈钢链条</a> <a href="/Products/product_nav/chain/Roof_chain.html">
+                            顶板链</a>
+                    </div>
+                    <a href="/Products/product_nav/chain/Chain_products.html" class="more">
+                        了解更多</a>
+                </li>
+                <li class="product_class wow bounceInUp animated" data-wow-delay="0.9s" data-wow-duration="1.8s"
+                    style="visibility: visible; animation-duration: 1.8s; animation-delay: 0.9s; animation-name: bounceInUp;">
+                    <div class="product_title" data-wow-delay="1.3s" data-wow-duration="1.8s">
+                        <img src="/Public/images/gear.png">
+                        <br>链轮产品
+                    </div>
+                    <div class="list">
+                        <a href="/Products/product_nav/sprocket/sprockets_isostandard.html">
+                            欧标链轮</a> <a href="/Products/product_nav/sprocket/American_Standard_sprocket.html">
+                            美标链轮</a> <a href="/Products/product_nav/sprocket/Double_pitch_sprocket.html">
+                            双节距链轮</a> <a href="/Products/product_nav/sprocket/Large_pitch_sprocket.html">
+                            大节距输送链轮</a> <a href="/Products/product_nav/sprocket/Flat_top_conveyor_chain.html">
+                            平顶输送链轮</a> <a href="/Products/product_nav/sprocket/Sprocket_Double_speed_chain.html">
+                            倍速链轮</a> <a href="/Products/product_nav/sprocket/Cast_iron_sprocket.html">
+                            铸铁链轮</a>
+                    </div>
+                    <a href="/Products/product_nav/sprocket/sprocket_products.html" class="more">
+                        了解更多</a>
+                </li>
+                <li class="product_class wow bounceInUp animated" data-wow-delay="1s" data-wow-duration="1.8s"
+                    style="visibility: visible; animation-duration: 1.8s; animation-delay: 1s; animation-name: bounceInUp;">
+                    <div class="product_title wow bounceInUp animated" data-wow-delay="1.4s" data-wow-duration="1.8s"
+                        style="visibility: visible; animation-duration: 1.8s; animation-delay: 1.4s; animation-name: bounceInUp;">
+                        <img src="/Public/images/Move1.png"><br>传动产品
+                    </div>
+                    <div class="list">
+                        <a href="/Products/product_nav/transmission/synchronous_pulley.html">
+                            同步带轮</a> <a href="/Products/product_nav/transmission/rack_and_pinion.html">
+                            齿轮齿条</a> <a href="/Products/product_nav/transmission/worm_gear.html">
+                            蜗轮蜗杆</a> <a href="/Products/product_nav/transmission/coupling.html">
+                            联轴器</a> <a href="/Products/product_nav/transmission/connector.html">
+                            联结件</a>
+                    </div>
+                    <a href="/Products/product_nav/transmission/transmission_products.html" class="more">
+                        了解更多<span class="bg"></span></a>
+                </li>
+                <li class="product_class wow bounceInUp animated" data-wow-delay="1.2s" data-wow-duration="1.7s"
+                    style="visibility: visible; animation-duration: 1.7s; animation-delay: 1.2s; animation-name: bounceInUp;">
+                    <div class="product_title  wow lightSpeedIn animated" data-wow-delay="1.6s" data-wow-duration="1.8s"
+                        style="visibility: visible; animation-duration: 1.8s; animation-delay: 1.6s; animation-name: lightSpeedIn;">
+                        <img src="/Public/images/Other.png"><br>其它产品
+                    </div>
+                    <div class="list">
+                        <a href="/Products/product_nav/other/Other_products_Ring_chain.html">
+                            圆环链</a> <a href="/Products/product_nav/other/Other_products-conveyor_belt.html">
+                            输送带</a> <a href="/Products/product_nav/other/Spreader.html">
+                            吊具</a>
+                    </div>
+                    <a href="/Products/product_nav/other/other_products.html" class="more">
+                        了解更多</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 关于我们 -->
+    <div class="about">
+        <div class="about_content" style="background-image: url(/Public/upload/2021-05-18/60a311e5ba9e9.png)" ;="">
+            <div class="about_content_left">
+                <div class="describe">
+                    <span class="h2 aos-init" aos="fade-up">携手努力，我们将推动世界向前发展</span>
+                    <h2 class="h2 aos-init" aos="fade-up" aos-delay="300">ABOUT US</h2>
+                    <div aos="fade-up" aos-delay="600" class="aos-init">
+                        <p>
+                            不是所有人都知道本公司是做什么的，但从这里您可以了解到本公司可以实现什么做到什么。
+                        </p>
+                        <p>
+                            我们提供的产品和服务使全球的设备、机械和车辆保持运转。从中国乃至全世界，无所不及。
+                        </p>
+                    </div>
+                </div>
+                <a href="/About/about.html" class="more aos-init" aos="fade-up" aos-delay="900">了解更多</a>
+            </div>
+            <div class="about_content_right"></div>
+        </div>
+        <div class="index-bk2">
+            <ul>
+                <li>
+                    <a href="/About/About_survey.html">
+                        <img src="/Public/upload/2021-08-15/6117eedbedb94.jpg">
+                        <p>公司概况</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/About/About_continued.html">
+                        <img src="/Public/upload/2021-06-09/60c0a469af126.png">
+                        <p>可持续发展</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/About/About_DevelopmentAndProduction.html">
+                        <img src="/Public/upload/2021-08-08/610fdb8e47975.jpg">
+                        <p>技术开发与生产</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 应用领域 -->
+    <div class="application wow bounceInLeft animated" data-wow-duration="1s"
+        style="visibility: visible; animation-duration: 1s; animation-name: bounceInLeft;">
+        <div class="application_content">
+            <div class="left wow bounceInLeft animated" data-wow-duration="1.2s"
+                style="visibility: visible; animation-duration: 1.2s; animation-name: bounceInLeft;">
+                <div class="main_app">
+                    <a href="/Applications/application.html">
+                        <h1 class="wow bounceInRight animated" data-wow-delay="0.3s" data-wow-duration="1.5s"
+                            style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: bounceInRight;">
+                            行业解决方案</h1>
+                    </a>
+                    <h2 class="wow bounceInRight h2 animated" data-wow-delay="0.6s" data-wow-duration="1.5s"
+                        style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.6s; animation-name: bounceInRight;">
+                        APLLICATION</h2>
+                    <div class="describe wow bounceInRight animated" data-wow-delay="0.9s" data-wow-duration="1.5s"
+                        style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.9s; animation-name: bounceInRight;">
+                        <p>
+                            隆德产品应用范围广泛，在工程机械、农业机械、食品加工、包装灌装等行业发挥着重要效能。
+                        </p>
+                    </div>
+                    <a href="/Applications/application.html" class="more wow shake animated" data-wow-iteration="20"
+                        data-wow-delay="3s" data-wow-duration="12s"
+                        style="visibility: visible; animation-duration: 12s; animation-delay: 3s; animation-iteration-count: 20; animation-name: shake;">了解更多</a>
+                </div>
+                <div class="other_box">
+                    <div class="other_app">
+                        <img class="icon" src="/Public/upload/2021-03-19/6053fffca25e4.png">
+                        <h2>农业机械</h2>
+                        <a href="/Applications/application_details/id/26.html" class="more">
+                            了解更多 &gt;
+                        </a>
+                    </div>
+                    <div class="other_app">
+                        <img class="icon" src="/Public/upload/2021-03-19/60543929b22ae.png">
+                        <h2>食品行业</h2>
+                        <a href="/Applications/application_details/id/8.html" class="more">
+                            了解更多 &gt;
+                        </a>
+                    </div>
+                    <div class="other_app">
+                        <img class="icon" src="/Public/upload/2021-03-19/6053ffea55f9c.png">
+                        <h2>矿产行业</h2>
+                        <a href="/Applications/application_details/id/24.html" class="more">
+                            了解更多 &gt;
+                        </a>
+                    </div>
+                    <div class="other_app">
+                        <img class="icon" src="/Public/upload/2021-03-19/6053ff92b1def.png">
+                        <h2>社会设施</h2>
+                        <a href="/Applications/application_details/id/12.html" class="more">
+                            了解更多 &gt;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fsbanner">
+                <div style="background-image: url(&quot;/Public/upload/2021-02-23/6034ac0b88c5f.jpg&quot;); height: 729.996px; width: 988.607px; z-index: 0; left: 0px;"
+                    class="bg_img">
+                    <div class="app_bg" style="height: 729.996px; width: 988.607px; z-index: 1; left: 116.189px;">
+                        <a href="/Applications/application_details/id/3.html" class="main_info">
+
+                            <img class="icon" src="/Public/upload/2021-03-19/6053fed721a48.png">
+                            <h2>机械工程</h2>
+                            <section class="app_describe"></section>
+                        </a>
+                        <section class="bottom_info">
+                            <section class="bottom_title">
+                                <h2>机械工程</h2>
+                                <a href="/Applications/application_details/id/3.html" class="more">
+
+                                    了解更多 &gt;
+
+                                </a>
+                            </section>
+                            <section class="bottom_text">
+                                <p>
+                                    <span style="color:#1A1A1A;font-family:Oxanium, "
+                                        font-size:16px;letter-spacing:1.2px;text-wrap:wrap;background-color:#ffffff;"="">隆德以其丰富的采用实绩和经验提供适用于各个用途的多种产品。</span>
+                                </p>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+                <div style="background-image: url(&quot;/Public/upload/2021-02-23/6034ac350cd1f.jpg&quot;); height: 729.996px; width: 988.607px; z-index: 2; left: 232.378px;"
+                    class="bg_img">
+                    <div class="app_bg" style="height: 729.996px; width: 988.607px; z-index: 3; left: 348.567px;">
+                        <a href="/Applications/application_details/id/4.html" class="main_info">
+
+                            <img class="icon" src="/Public/upload/2021-03-19/6053fedd4dc45.png">
+                            <h2>轮胎行业</h2>
+                            <section class="app_describe"></section>
+                        </a>
+                        <section class="bottom_info">
+                            <section class="bottom_title">
+                                <h2>轮胎行业</h2>
+                                <a href="/Applications/application_details/id/4.html" class="more">
+
+                                    了解更多 &gt;
+
+                                </a>
+                            </section>
+                            <section class="bottom_text">
+                                <p>
+                                    隆德的产品广泛应用于轮胎生产的各个工序。<br>
+                                </p>
+                                <div style="height: 729.996px; width: 988.607px; z-index: 4; left: 464.756px;">
+                                    <br>
+                                </div>
+                                <p></p>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+                <div style="background-image: url(&quot;/Public/upload/2021-02-23/6034af342773c.jpg&quot;); height: 729.996px; width: 988.607px; z-index: 5; left: 580.945px;"
+                    class="bg_img">
+                    <div class="app_bg" style="height: 729.996px; width: 988.607px; z-index: 6; left: 697.135px;">
+                        <a href="/Applications/application_details/id/16.html" class="main_info">
+
+                            <img class="icon" src="/Public/upload/2021-03-19/6053ff79ebb05.png">
+                            <h2>包装行业</h2>
+                            <section class="app_describe"></section>
+                        </a>
+                        <section class="bottom_info">
+                            <section class="bottom_title">
+                                <h2>包装行业</h2>
+                                <a href="/Applications/application_details/id/16.html" class="more">
+
+                                    了解更多 &gt;
+
+                                </a>
+                            </section>
+                            <section class="bottom_text"><span style="color:#1A1A1A;font-family:Oxanium, "
+                                    font-size:16px;letter-spacing:1.2px;text-wrap:wrap;background-color:#ffffff;"="">凝聚隆德技术精华的链条产品活跃在各类包装行业。</span>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+                <div style="background-image: url(&quot;/Public/upload/2021-02-23/6034b086cea46.jpg&quot;); height: 729.996px; width: 988.607px; z-index: 7; left: 813.324px;"
+                    class="bg_img">
+                    <div class="app_bg" style="height: 729.996px; width: 988.607px; z-index: 8; left: 929.513px;">
+                        <a href="/Applications/application_details/id/32.html" class="main_info">
+
+                            <img class="icon" src="/Public/upload/2021-03-19/6054000a08c26.png">
+                            <h2>木林加工</h2>
+                            <section class="app_describe"></section>
+                        </a>
+                        <section class="bottom_info">
+                            <section class="bottom_title">
+                                <h2>木林加工</h2>
+                                <a href="/Applications/application_details/id/32.html" class="more">
+
+                                    了解更多 &gt;
+
+                                </a>
+                            </section>
+                            <section class="bottom_text">隆德链条产品凭借丰富的经验，为木材加工带来更加多样化且实用性更强的产品。</section>
+                        </section>
+                    </div>
+                </div>
+                <div style="background-image: url(&quot;/Public/upload/2021-02-23/6034b098e5682.jpg&quot;); height: 729.996px; width: 988.607px; z-index: 9; left: 1045.7px;"
+                    class="bg_img">
+                    <div class="app_bg" style="height: 729.996px; width: 988.607px; z-index: 10; left: 1161.89px;">
+                        <a href="/Applications/application_details/id/33.html" class="main_info">
+
+                            <img class="icon" src="/Public/upload/2021-03-19/60540003733a2.png">
+                            <h2>烟草行业</h2>
+                            <section class="app_describe"></section>
+                        </a>
+                        <section class="bottom_info">
+                            <section class="bottom_title">
+                                <h2>烟草行业</h2>
+                                <a href="/Applications/application_details/id/33.html" class="more">
+
+                                    了解更多 &gt;
+
+                                </a>
+                            </section>
+                            <section class="bottom_text">
+                                <p>
+                                    隆德各种标准及非标的高品质滚子链条在烟草生产设备、包装设备等都有着广泛的应用。
+                                </p>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 优势 -->
+    <div class="advantage" style="background-image: url(/Public/upload/2021-06-28/60d987bebe6f1.png);">
+        <div class="advantage_content">
+            <ul>
+                <li>
+                    <img src="/Public/upload/2021-06-16/60c9f0226185c.png"><br>
+                    <span class="text">覆盖国家</span>
+                    <span class="nub" id="country">50+</span>
+                </li>
+                <li>
+                    <img src="/Public/upload/2021-06-16/60c9f00649dfa.png"><br>
+                    <span class="text">覆盖城市</span>
+                    <span class="nub" id="city">500+</span>
+                </li>
+                <li>
+                    <img src="/Public/upload/2021-06-16/60c9f010303d8.png"><br>
+                    <span class="text">合作伙伴</span>
+                    <span class="nub" id="cooperation">2000+</span>
+                </li>
+                <li>
+                    <img src="/Public/upload/2021-06-16/60c9f02a18a00.png"><br>
+                    <span class="text">成功案例</span>
+                    <span class="nub" id="success">5000+</span>
+                </li>
+                <div class="planet">
+                    <div class="texture"></div>
+                </div>
+                <h1 class="font_title">全球服务</h1>
+                <div class="bgc"></div>
+            </ul>
+            <div class="right">
+                <h1><a href="/Service/Service.html">服务与支持</a></h1>
+                <h2 class="h2">SUPPORT &amp; SERVICE</h2>
+                <!-- <h2 class="h2">SUPPORT &amp; SERVICE,服务与支持</h2> -->
+                <div class="describe wow bounceInRight animated" data-wow-duration="1.6s"
+                    style="visibility: visible; animation-duration: 1.6s; animation-name: bounceInRight;">
+                    <img src="/Public/upload/2021-06-18/60cbf883ddef1.png">
+                    <h3 class="wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
+                        15分钟相应，24小时解决问题
+                    </h3>
+                    <h4 class="wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
+                        隆德服务理念：
+                    </h4>
+                    <p class="wow bounceInRight animated" data-wow-delay="1.1s" data-wow-duration="2s"
+                        style="visibility: visible; animation-duration: 2s; animation-delay: 1.1s; animation-name: bounceInRight;">
+                        以简单快捷的方式提供服务
+                    </p>
+                    <p class="wow bounceInRight animated" data-wow-delay="1.5s" data-wow-duration="2s"
+                        style="visibility: visible; animation-duration: 2s; animation-delay: 1.5s; animation-name: bounceInRight;">
+                        倾听
+                    </p>
+                    <p class="wow bounceInRight animated" data-wow-delay="1.9s" data-wow-duration="2s"
+                        style="visibility: visible; animation-duration: 2s; animation-delay: 1.9s; animation-name: bounceInRight;">
+                        理解
+                    </p>
+                    <p class="wow bounceInRight animated" data-wow-delay="2.2s" data-wow-duration="2s"
+                        style="visibility: visible; animation-duration: 2s; animation-delay: 2.2s; animation-name: bounceInRight;">
+                        履行承诺
+                    </p>
+                    <p class="wow bounceInRight animated" data-wow-delay="2.5s" data-wow-duration="2s"
+                        style="visibility: visible; animation-duration: 2s; animation-delay: 2.5s; animation-name: bounceInRight;">
+                        随时、随地
+                    </p>
+                    <div class="link">
+                        <a href="/service/ServiceCase/id/10.html" class="wow bounceInRight animated"
+                            data-wow-delay="2.8s" data-wow-duration="2s"
+                            style="visibility: visible; animation-duration: 2s; animation-delay: 2.8s; animation-name: bounceInRight;">查看服务案例&nbsp;
+                            <span>&gt;</span></a><br>
+                        <a href="/Contact/contact.html" class="wow bounceInRight animated" data-wow-delay="3.1s"
+                            data-wow-duration="2s"
+                            style="visibility: visible; animation-duration: 2s; animation-delay: 3.1s; animation-name: bounceInRight;">留下您的疑问与建议&nbsp;
+                            <span>&gt;</span></a>
+                    </div>
+                </div>
+                <div class="west">
+                    <div class="support_list wow bounceInRight animated" data-wow-duration="1.6s"
+                        style="visibility: visible; animation-duration: 1.6s; animation-name: bounceInRight;">
+                        <img src="/Public/upload/2021-08-07/610e96a1370d6.jpg">
+                        <a href="/service/ProductsAndServices/id/8.html">
+                            产品应用支持 </a>
+                    </div>
+                    <div class="support_list wow bounceInRight animated" data-wow-duration="1.6s"
+                        style="visibility: visible; animation-duration: 1.6s; animation-name: bounceInRight;">
+                        <img src="/Public/upload/2021-08-07/610e57bf07032.jpg">
+                        <a href="/service/ProductsAndServices/id/9.html">
+                            产品技术服务 </a>
+                    </div>
+                    <div class="support_list wow bounceInRight animated" data-wow-duration="1.6s"
+                        style="visibility: visible; animation-duration: 1.6s; animation-name: bounceInRight;">
+                        <img src="/Public/upload/2021-08-14/6117303c31677.jpeg">
+                        <a href="/service/ServiceCase/id/10.html">
+
+                            服务案例 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 优势2 -->
+    <div class="advantage2 ">
+        <div class="top">
+            <!-- <div class="top"  style="background-image: url(/Public/upload/2021-07-30/6103b2ced1080.jpg);"> -->
+            <img src="http://longold-chain.com/Public/upload/2021-07-30/6103b2ced1080.jpg">
+            <div aos="fade-up" class="aos-init">
+                <h1>隆德链条<span>LONGOLD CHAIN</span></h1>
+                <h2>
+                    值得信赖的合作伙伴 YOUR PROVEN PARTNER
+                </h2>
+                <h2>
+                    与您共同成长 GROW WITH YOU
+                </h2>
+            </div>
+        </div>
+        <div class="fsbanners"
+            style="background-image: url(http://longold-chain.com/Public/upload/2021-06-28/60d980e5ccfbb.jpg);">
+            <div style="background-image: url(&quot;http://longold-chain.com/Public/upload/2021-07-30/6103bb3339082.png&quot;); height: 549.996px; width: 1227.86px; z-index: 0; left: 0px;"
+                class="list">
+                <section class="title">
+                    <h2>精益制造</h2>
+                    <h2>卓越品质</h2>
+                </section>
+                <section class="text">
+                    <section class="left">
+                        <h3>
+                            精益制造 <span> </span> 卓越品质
+                        </h3>
+                        <p>
+                            <span>●</span>产品严格执行ISO、ANSI、DIN和JIS生产标准。
+                        </p>
+                        <p>
+                            <span>●</span>其质量均高于国内同类型产品
+                        </p>
+                        <p>
+                            <span>●</span>产品传动能力更高，使用寿命更长。
+                        </p>
+                        <a href="/About/About_technology.html">了解更多</a>
+                    </section>
+                    <section class="right">
+                        <img src="/Public/images/90.png">
+                    </section>
+                </section>
+            </div>
+            <div style="background-image: url(&quot;http://longold-chain.com/Public/upload/2021-07-30/6103ba5da8625.png&quot;); height: 549.996px; width: 1227.86px; z-index: 1; left: 306.716px;"
+                class="list">
+                <section class="title">
+                    <h2>领先技术</h2>
+                    <h2>产品齐全</h2>
+                </section>
+                <section class="text">
+                    <section class="left">
+                        <h3>
+                            领先技术 <span> </span> 产品齐全
+                        </h3>
+                        <p>
+                            <span>●</span>领先国内链条产品技术力量
+                        </p>
+                        <p>
+                            <span>●</span>强大的研发设计能力
+                        </p>
+                        <p>
+                            <span>●</span>先进的制造设备和完善的生产设施
+                        </p>
+                        <p>
+                            <span>●</span>能够为用户提供各行各业不同应用需求的高品质链条产品
+                        </p>
+                        <a href="/Products/product.html">了解更多</a>
+                    </section>
+                    <section class="right">
+                        <img src="/Public/images/91.png">
+                    </section>
+                </section>
+            </div>
+            <div style="background-image: url(&quot;http://longold-chain.com/Public/upload/2021-07-30/6103ba66c1281.png&quot;); height: 549.996px; width: 1227.86px; z-index: 2; left: 613.432px;"
+                class="list">
+                <section class="title">
+                    <h2>高效生产</h2>
+                    <h2>快速交货</h2>
+                </section>
+                <section class="text">
+                    <section class="left">
+                        <h3>
+                            高效生产 <span> </span> 快速交货
+                        </h3>
+                        <p>
+                            <span>●</span>快速打样，加工周期缩短至15天
+                        </p>
+                        <p>
+                            <span>●</span>数台高速CNC24小时加工，15-30天全国交付
+                        </p>
+                        <p>
+                            <span>●</span>全套产品生产、装配、测试生产线紧密配合完成
+                        </p>
+                        <a href="/About/About_production.html">了解更多</a>
+                    </section>
+                    <section class="right">
+                        <img src="/Public/upload/image/20210809/20210809153121_20299.jpg" width="506" height="400"
+                            title="" align="" alt="">
+                    </section>
+                </section>
+            </div>
+            <div style="background-image: url(&quot;http://longold-chain.com/Public/upload/2021-07-30/6103ba730e43b.png&quot;); height: 549.996px; width: 1227.86px; z-index: 3; left: 920.148px;"
+                class="list">
+                <section class="title">
+                    <h2>品质为本</h2>
+                    <h2>质量可靠</h2>
+                </section>
+                <section class="text">
+                    <section class="left">
+                        <h3>
+                            品质为本 <span> </span> 质量可靠
+                        </h3>
+                        <p>
+                            <span>●</span>进口精密检测仪器数台，严谨的生产工艺流程
+                        </p>
+                        <p>
+                            <span>●</span>检测精度可达0.005MM，减少零部件不良率
+                        </p>
+                        <p>
+                            <span>●</span>零部件交验合格率极高，提供检测报告&amp;材质证明
+                        </p>
+                        <a href="/About/About_quality.html">了解更多</a>
+                    </section>
+                    <section class="right">
+                        <img src="/Public/images/93.png">
+                    </section>
+                </section>
+            </div>
+            <div style="background-image: url(&quot;http://longold-chain.com/Public/upload/2021-07-30/6103ba7ef371f.jpg&quot;); height: 549.996px; width: 1227.86px; z-index: 4; left: 1226.86px;"
+                class="list">
+                <section class="title">
+                    <h2>客户至上</h2>
+                    <h2>高效创新</h2>
+                </section>
+                <section class="text">
+                    <section class="left">
+                        <h3>
+                            客户至上 <span> </span> 高效创新
+                        </h3>
+                        <p>
+                            <span>●</span>7*24小时在线客服为您服务
+                        </p>
+                        <p>
+                            <span>●</span>提供技术咨询和技术交换
+                        </p>
+                        <p>
+                            <span>●</span>配合产品后期的改进优化
+                        </p>
+                        <a href="/About/About_innovate.html">了解更多</a>
+                    </section>
+                    <section class="right">
+                        <img src="/Public/upload/image/20210809/20210809151216_24627.png" width="506" height="357"
+                            title="" align="" alt="">
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- 新闻模块 -->
+    <div class="news">
+        <div class="news_content">
+            <div class="top">
+                <div class="title">
+                    <h1 aos="fade-up" class="aos-init">新闻资讯</h1>
+                    <h2 aos="fade-up" class="h2 aos-init">NEWS</h2>
+                    <p aos="fade-up" aos-delay="300" class="aos-init">
+                        <span style="line-height:2.5;">了解有关longold的产品、活动和展会的最新消息。了解我们如何传动世界，链接你我！</span>
+                    </p>
+                </div>
+                <ul class="nav nav-pills publl-right aos-init" role="tablist" aos="fade-up" aos-delay="300">
+                    <li role="presentation" class="active">
+                        <a href="#company" role="tab" data-toggle="tab" aria-expanded="true">
+                            <h3>公司新闻</h3>
+                        </a>
+                    </li>
+                    <li role="presentation" class="">
+                        <a href="#Industry" role="tab" data-toggle="tab" aria-expanded="false">
+                            <h3>行业资讯</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="company">
+                    <div class="left wow bounceInLeft animated" data-wow-duration="2s"
+                        style="visibility: visible; animation-duration: 2s; animation-name: bounceInLeft;">
+
+                        <div class="img">
+                            <img src="/Public/upload/2023-10-05/651e17dbf31ed.PNG">
+                        </div>
+                        <div class="text">
+                            <div class="date">
+                                <span class="day">05</span>
+                                <span>2023 - 10</span>
+                            </div>
+                            <h3>公司新闻——链条的基本分类</h3>
+                            <div class="text_describe">
+                                输送链的结构由内链节和外链节组成。 它也由五个小部分组成：内链板，外链板 . . .</div>
+                        </div>
+                        <!-- </a>	 -->
+                        <a href="/News/news_details/id/23.html">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <ul class="right wow bounceInRight animated" data-wow-duration="2s"
+                        style="visibility: visible; animation-duration: 2s; animation-name: bounceInRight;">
+                        <li>
+                            <a href="/News/news_details/id/17.html" class="text">
+                                <div class="date">
+                                    <span class="day">04</span>
+                                    <span>2023 - 10</span>
+                                </div>
+                                <h3>公司新闻——链条紧结如何处理？</h3>
+                                <div class="text_describe">
+                                    链条出现紧结时，请按照下面步骤逐个排除原因，并按照相应维护措施进行处理： . . .</div>
+
+                            </a>
+                            <a href="/News/news_details/id/17.html" class="news_content_text">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/News/news_details/id/16.html" class="text">
+                                <div class="date">
+                                    <span class="day">20</span>
+                                    <span>2023 - 09</span>
+                                </div>
+                                <h3>公司新闻——如果保养和维修滚子链条</h3>
+                                <div class="text_describe">
+                                    1、保证链轮装在轴上应没有倾斜和摆动。链条厂家在同一传动组件中两个链轮的 . . .</div>
+
+                            </a>
+                            <a href="/News/news_details/id/16.html" class="news_content_text">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/News/news_details/id/11.html" class="text">
+                                <div class="date">
+                                    <span class="day">21</span>
+                                    <span>2023 - 08</span>
+                                </div>
+                                <h3>公司新闻——滚子链传动的润滑</h3>
+                                <div class="text_describe">
+                                    1、润滑油的流量
+
+
+                                    滚子链条的每一个铰链都是一个径向轴承，因此必须使 . . .</div>
+
+                            </a>
+                            <a href="/News/news_details/id/11.html" class="news_content_text">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Industry">
+                    <div class="left">
+
+                        <a href="/News/news_details/id/24.html">
+                            <div class="img">
+                                <img src="/Public/upload/2023-10-05/651e1e83b570f.PNG">
+                            </div>
+                            <div class="text">
+                                <div class="date">
+                                    <span class="day">05</span>
+                                    <span>2023 - 10</span>
+                                </div>
+                                <h3>行业资讯——链轮齿部磨损的原因及解决办法测试用测试用</h3>
+                                <div class="text_describe">
+                                    一般情况下，链轮齿部磨损分为齿侧面严重磨损和整个齿部严重磨损，不同的磨损 . . .</div>
+                            </div>
+                        </a>
+                        <a href="/News/news_details/id/24.html">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <ul class="right">
+                        <li>
+                            <a href="/News/news_details/id/22.html" class="text">
+                                <div class="date">
+                                    <span class="day">04</span>
+                                    <span>2023 - 10</span>
+                                </div>
+                                <h3>行业资讯——如何选择链条的润滑油</h3>
+                                <div class="text_describe">
+                                    润滑油的链传动要求：
+
+
+                                    1.渗透性好
+
+
+                                    对于链条来说，滚子和 . . .</div>
+
+                            </a>
+                            <a href="/News/news_details/id/22.html" class="news_content_text">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/News/news_details/id/21.html" class="text">
+                                <div class="date">
+                                    <span class="day">05</span>
+                                    <span>2023 - 09</span>
+                                </div>
+                                <h3>行业资讯——双节距滚子链条的维护保养</h3>
+                                <div class="text_describe">
+                                    双节距滚子链的日常维护分为维护保养。
+
+
+                                    双节距滚子链生产线在正常使 . . .</div>
+
+                            </a>
+                            <a href="/News/news_details/id/21.html" class="news_content_text">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/News/news_details/id/20.html" class="text">
+                                <div class="date">
+                                    <span class="day">03</span>
+                                    <span>2023 - 08</span>
+                                </div>
+                                <h3>行业资讯——滚子链的优点</h3>
+                                <div class="text_describe">
+                                    滚子链条可制成单排链和多排链。当需求接受较大载荷、传送较大功率时，可运用 . . .</div>
+
+                            </a>
+                            <a href="/News/news_details/id/20.html" class="news_content_text">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="/Public/js/fsbanner.js"></script> <!-- 应用领域 -->
+        <script src="/Public/js/banner.js"></script>
+        <script src="/Public/js/index.js"></script>
+        <script src="/Public/js/wowslider.js"></script>
+        <script src="/Public/js/wowslider_index.js"></script>
+        <script>
+            // 鼠标切换 tabs 标签页
+            $(function () {
+                $(".news .nav li a").mousemove(function (e) {
+                    $(this).tab('show');
+                });
+            });
+            AOS.init({
+                offset: 300,
+                duration: 1500,
+                easing: 'ease'
+            });
+
+            //产品中心 鼠标上去 切换背景 背景图片
+            let product_class = $('.product_class');
+            let img2 = "/Public/upload/2021-08-06/610c1819424cd.jpg";
+            $('.product').css({ "background-image": "url(" + img2 + ")" });
+            for (var i = 0; i <= product_class.length; i++) {
+                (function (i) {
+                    let img = "";
+                    if (i == 0) {
+                        img = "/Public/upload/2021-08-06/610c1819424cd.jpg";
+                    } else if (i == 1) {
+                        img = "/Public/upload/2021-08-06/610c1819424cd.jpg";
+                    } else if (i == 2) {
+                        img = "/Public/upload/2021-08-06/610c1819424cd.jpg";
+                    } else if (i == 3) {
+                        img = "/Public/upload/2021-08-06/610c1819424cd.jpg";
+                    }
+
+                    product_class.eq(i).hover(function () {
+                        $('.product').css({ "background-image": "url(" + img + ")" });
+                    }, function () {
+                        $('.product').css({ "background-image": "url(" + img2 + ")" });
+                    });
+                })(i)
+            }
+        </script>
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?8ac8019153d91295a14334c2c00631ef";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+
+        <footer>
+            <div class="footer">
+                <div class="footer_top">
+                    <ul class="left">
+                        <li>
+                            <img src="/Public/images/logo_1.png">
+                        </li>
+                        <li>
+                            <div class="footer_title">
+                                <a href="/About/about.html">
+                                    <h3>关于我们</h3>
+                                </a>
+                            </div>
+                            <div class="list">
+                                <a href="/about/About_survey.html">公司概况</a>
+                                <a href="/about/About_QualityAssurance.html">质量体系</a>
+                                <a href="/about/About_DevelopmentAndProduction.html">技术开发与生产</a>
+                                <a href="/about/About_continued.html">可持续发展</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer_title">
+                                <a href="/Products/product.html">
+                                    <h3>产品中心</h3>
+                                </a>
+                            </div>
+                            <div class="list">
+                                <a href="/Products/product_nav/chain/Chain_products.html"> 链条产品
+                                </a> <a href="/Products/product_nav/sprocket/sprocket_products.html"> 链轮产品
+                                </a> <a href="/Products/product_nav/transmission/transmission_products.html"> 传动产品
+                                </a> <a href="/Products/product_nav/other/other_products.html"> 其它产品
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer_title">
+                                <a href="/Applications/application.html">
+                                    <h3>行业解决方案</h3>
+                                </a>
+                            </div>
+                            <div class="list">
+                                <a href="/Applications/application.html">了解更多</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer_title">
+                                <a href="/Service/Service.html">
+                                    <h3>服务与支持</h3>
+                                </a>
+                            </div>
+                            <div class="list">
+
+                                <a href="/service/ProductsAndServices/id/8.html"> 产品应用支持</a>
+                                <a href="/service/ProductsAndServices/id/9.html"> 产品技术服务</a><a
+                                    href="/service/ServiceCase/id/10.html">
+                                    服务案例</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <div class="footer_title">
+                            <h3>联系我们</h3>
+                        </div>
+                        <div class="text_box">
+                            <li>
+                                <span style="font-size:16px;">联系电话: <span
+                                        style="font-size:16px;white-space:normal;">+86-</span>020-22197679 22197689
+                                    22197869</span>
+                            </li>
+                            <li>
+                                <span style="font-size:16px;">客服直线: +86-020-28911999</span>
+                            </li>
+                            <li>
+                                <span style="font-size:16px;">直线传真: <span
+                                        style="font-size:16px;white-space:normal;">+86-</span>020-22197889</span>
+                            </li>
+                            <li>
+                                <span style="font-size:16px;">联系邮箱: gzld_chain@126.com</span>
+                            </li>
+                            <li>
+                                <span style="font-size:16px;">技术支持: info@gzlongde.com</span>
+                            </li>
+                            <li>
+                                <span style="font-size:16px;">公司地址：广州市黄埔区黄埔东路1-9号<br>
+                                </span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="down">
+                    <div class="follow">
+                        <div class="footer_title">
+                            <h3>关注我们</h3>
+                        </div>
+                        <div class="code">
+                            <img src="/Public/upload/image/20210409/20210409184256_95212.png" alt=""><img
+                                src="/Public/upload/image/20210409/20210409184305_59369.png" alt="">
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>
+                            <span style="font-size:16px;">版权所有 © 2010-2014 &nbsp;广州隆德链条重机有限公司&nbsp; 保留所有权利</span>
+                        </p>
+                        <p>
+                            <span> <span
+                                    style="display:inline-block;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;line-height:25px;"><a
+                                        href="https://beian.miit.gov.cn/#/Integrated/index"
+                                        target="_blank">粤ICP备11100883号</a></span><a target="_blank" href=" "> </a>
+                            </span> <span> <img src="http://www.beian.gov.cn/img/new/gongan.png"></span> <span><a
+                                    target="_blank"
+                                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011202002182"
+                                    style="display:inline-block;text-decoration:none;line-height:25px;width:auto;text-indent:0 !important;">
+                                    粤公网安备 44011202002182号 </a> </span>
+                        </p>
+                        <div class="other">
+                            <a href="/Index/clause/id/108.html">使用条款</a> <span>|</span><a
+                                href="/Index/clause/id/109.html">隐私政策</a> <span>|</span><a
+                                href="/Index/clause/id/110.html">法律声明</a> <span>|</span><a
+                                href="/Index/clause/id/111.html">网站声明</a> <span>|</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_friendship">
+                    <a href="javascript:;">友情链接:</a>
+                    <a href="http://tsubaki-gz.cn/" target="_blank">广州隆德重机有限公司</a><a href="http://www.zjweiman.com/"
+                        target="_blank">精密模具制造厂家</a><a href="http://www.zczdkeji.com" target="_blank">非标机械设备</a><a
+                        href="http://www.beijingfumen.com/" target="_blank">自动车库门</a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?8ac8019153d91295a14334c2c00631ef";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+
+    </div><ins id="aff-im-root" data-v-app="">
+        <div data-v-06873b41="" class="embed-icon" style="top: 50%; right: 2px; transform: translateY(-50%);"><span
+                data-v-06873b41="" class="embed-icon-unread-num" style="display: none;">0</span>
+            <div data-v-06873b41="" class="embed-icon-default embed-icon-pcIcon5"
+                style="width: 98px; height: 44px; background-position: right center;"></div><!---->
+        </div><!----><!----><!----><audio data-v-682deb95="" preload="auto" cross-origin="anonymous"
+            src="https://aifanfan.baidu.com/chat/static/voice/msg.wav"></audio><!----><!---->
+    </ins>
+    <script id="jsonp_callback_68235"
+        src="https://affimvip.baidu.com/cps5/site/poll?l=1&amp;sign=&amp;v=4845272679018423618&amp;s=18423618&amp;e=2428310&amp;isAFF=1&amp;filterAdvertisement=1&amp;dev=0&amp;auth=%7B%22anonym%22%3A0%2C%22key%22%3A%22e75e5694-81e1-4a00-bb92-bf415e78e635%22%2C%22id%22%3A%224845272679018423618%22%2C%22from%22%3A4%2C%22token%22%3A%22bridge%22%7D&amp;stamp=8095&amp;cb=jsonp_callback_68235"></script>
+</body>
+
+</html>
